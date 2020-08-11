@@ -34,7 +34,8 @@ public class AddBookServlet extends GenericServlet{
 			ps.setString(3, bAuthor);
 			ps.setInt(4, bPrice);
 			ps.setInt(5, bQty);
-			int k = ps.executeUpdate();
+			ps.setString(6, bCountry);
+			int k = ps.executeUpdate():;
 			if(k==1)
 			{
 				RequestDispatcher rd = req.getRequestDispatcher("AddBook.html");
